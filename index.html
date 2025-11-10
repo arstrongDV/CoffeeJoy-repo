@@ -4,125 +4,84 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/CoffeeJoy-repo/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/CoffeeJoy-repo/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/CoffeeJoy-repo/assets/styles-DvPDDfy5.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <title>CoffeeJoy</title>
+    <!-- Main Style File -->
+    <link rel="stylesheet" crossorigin href="/CoffeeJoy-repo/assets/index-BS3NLoxc.css">
   </head>
   <body>
-    <header class="header">
+    <header>
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/CoffeeJoy-repo/assets/sprite-E8vg0sBb.svg#logo"></use>
+    <nav class="header-nav">
+      <a class="logo" href="./index.html">
+        <svg width="84px" height="36px">
+          <use href="/CoffeeJoy-repo/assets/icons-B4OLPL3q.svg#icon-logo"></use>
         </svg>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+
+      <button class="mobile-menu-btn" type="button" aria-label="Open menu button">
+        <svg class="burger-icon" width="24" height="24">
+          <use href="/CoffeeJoy-repo/assets/icons-B4OLPL3q.svg#icon-menu"></use>
+        </svg>   
+      </button>
+
+      <ul class="navigation">
+        <li><a class="item-link" href="#welcome">About us</a></li>
+        <li><a class="item-link" href="#quality">Benefits</a></li>
+        <li><a class="item-link" href="#experience">Gallery</a></li>
+        <li><a class="item-link" href="#testimonials">Testimonial</a></li>
+        <li><a class="item-link" href="#location">Location</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
-
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/CoffeeJoy-repo/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
 
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
-
+    <div class="mobail-menu is-open">
+    <div class="container">
+        <div class="mobile-menu-header">
+            <a class="logo" href="./index.html">
+                <svg width="84px" height="36px">
+                  <use href="./images/icons.svg#icon-logo" />
+                </svg>
+              </a>
+            <button class="mobail-close-btn">
+                <svg class="btn-clouse-icon" width="24px" height="24px">
+                  <use href="/CoffeeJoy-repo/assets/icons-B4OLPL3q.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-nav">
+            <li class="menu-nav-item">
+                <a class="menu-item-link" href="#welcome">About us</a>
+            </li>
+            <li class="menu-nav-item">
+                <a class="menu-item-link" href="#quality">Benefits</a>
+            </li>
+            <li class="menu-nav-item">
+                <a class="menu-item-link" href="#experience">Gallery</a>
+            </li>
+            <li class="menu-nav-item">
+                <a class="menu-item-link" href="#testimonials">Testimonial</a>
+            </li>
+            <li class="menu-nav-item">
+                <a class="menu-item-link" href="#location">Location</a>
+            </li>
+        </ul>
+    </div>
+</div>
   </body>
 </html>
