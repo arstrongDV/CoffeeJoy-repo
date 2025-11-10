@@ -1,0 +1,215 @@
+/* #region Location section*/
+
+.location {
+    padding: 64px 0;
+  }
+  .location .container {
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  @media (min-width: 1440px) {
+    .location .container {
+      gap: 24px;
+      /* align-items: flex-start; */
+      flex-direction: row;
+    }
+  }
+  
+  .container-location {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 1439px) {
+    .container-location {
+      margin-bottom: 32px;
+    }
+  }
+  @media (min-width: 1440px) {
+    .container-location {
+      min-width: 419px;
+    }
+  }
+  
+  .location-main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .location-main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .location-tagline-wrap {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .location-headlines {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  @media (min-width: 1440px) {
+    .location-headlines {
+      font-size: 48px;
+    }
+  }
+  .location-head-text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .location-links {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 40px;
+  }
+  @media (min-width: 768px) {
+    .location-links-item {
+      width: calc((704px - 80px) / 3);
+    }
+    .location-links {
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .location-links-item {
+      width: auto;
+    }
+    .location-links {
+      flex-direction: column;
+    }
+  }
+  
+  .location-icon {
+    fill: #0b0803;
+    margin-bottom: 16px;
+  }
+  
+  .location-links-descr {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .location-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+  .location-link {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #0b0803;
+    transition: opacity 200ms ease-in;
+    opacity: 1;
+  }
+  
+  .location-link:hover,
+  .location-link:focus {
+    opacity: 0.5;
+  }
+  
+  .location-adress {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .get-direct-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration-skip-ink: none;
+    color: #0b0803;
+    margin-top: 16px;
+    transition: opacity 200ms ease-in;
+    opacity: 1;
+  }
+  
+  .get-direct-link:hover,
+  .get-direct-link:focus {
+    opacity: 0.5;
+  }
+  
+  .get-direct-icon {
+    fill: #0b0803;
+  }
+  
+  /* .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* .map-container iframe {
+    width: auto;
+    border-radius: 40px;
+    max-width: 100%;
+    height: 307px;
+  } */
+  
+  .map-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+    
+  .map-container iframe {
+      width: 100%;
+      height: 307px;
+      aspect-ratio: 16 / 9; 
+      border-radius: 40px;
+  }
+    
+    /* Optional: if you still want rounded corners on smaller layouts */
+    @media (max-width: 768px) {
+      .map-container iframe {
+        border-radius: 24px;
+      }
+    }
+  
+  @media (min-width: 768px) {
+    .map-container iframe {
+      /* min-width: 704px; */
+      height: 377px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .map-container {
+      justify-content: right;
+      align-items: baseline;
+    }
+    .map-container iframe {
+      /* min-width: 869px; */
+      height: 697px;
+    }
+  }
+  
+  /* #endregion Location section*/
+  

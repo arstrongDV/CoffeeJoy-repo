@@ -1,0 +1,142 @@
+/* #region Footer section */
+
+.page-footer {
+    width: 100%;
+    background-color: #B58869;
+    padding: 24px 0;
+    margin: 0 auto;
+}
+
+.page-footer .container{
+    min-width: 288px;
+    max-width: 1440px;
+    height: auto;
+    padding: 32px 46px;
+    background-color: #C29D84;
+    border-radius: 40px;
+    border: 1px solid rgba(11, 8, 3, 0.15);
+    margin: 0 auto;
+    /* margin-bottom: 32px; */
+    margin: 0 16px 32px 16px;
+}
+@media screen and (min-width: 768px) {
+    .page-footer .container {
+        margin: 0 32px 32px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .page-footer .container {
+        margin: 0 64px 32px 64px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+.footer-socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+    .footer-socials-container {
+        width: 220px;
+        flex-direction: row;
+        gap: 40px
+    }
+}
+@media screen and (min-width: 1440px) {
+    .footer-socials-container {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-logo {
+        width: 84px;
+        height: 36px;
+    }
+
+}
+
+.social-list {
+    display: flex; /* change */
+    gap: 12px;
+}
+
+.social-item {
+    display: inline-block;
+}
+
+.footer-social-svg {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-social-svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.footer-social-svg:active {
+    opacity: 0.7;
+}
+
+.footer-social-svg:hover,
+.footer-social-svg:focus {
+    opacity: 0.5;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+@media screen and (min-width: 768px) {
+    .nav-list {
+        flex-direction: row;
+    }
+}
+
+.nav-link {
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0B0803;
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+.nav-link:active {
+    opacity: 0.7;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    opacity: 0.5;
+}
+
+.footer-rights {
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #0B0803;
+    text-align: center;
+}
+/* #endregion Footer section*/
