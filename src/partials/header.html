@@ -1,18 +1,24 @@
-<header class="header">
+<header>
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
+    <nav class="header-nav">
+      <a class="logo" href="./index.html">
+        <svg width="84px" height="36px">
+          <use href="img/icons.svg#icon-logo"></use>
         </svg>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+
+      <button class="mobile-menu-btn" type="button" aria-label="Open menu button">
+        <svg class="burger-icon" width="24" height="24">
+          <use href="img/icons.svg#icon-menu"></use>
+        </svg>   
+      </button>
+
+      <ul class="navigation">
+        <li><a class="item-link" href="#welcome">About us</a></li>
+        <li><a class="item-link" href="#quality">Benefits</a></li>
+        <li><a class="item-link" href="#experience">Gallery</a></li>
+        <li><a class="item-link" href="#testimonials">Testimonial</a></li>
+        <li><a class="item-link" href="#location">Location</a></li>
       </ul>
     </nav>
   </div>
