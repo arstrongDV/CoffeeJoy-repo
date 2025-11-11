@@ -4,6 +4,10 @@ body{
   color: #0B0803;
 }
 
+.logo{
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
